@@ -1,0 +1,64 @@
+body {
+    background-color: rgba(255, 227, 251, 0.6);
+}
+
+#hero-section {
+    padding: 1rem;
+    min-height: 65vh;
+    background-image: url(./materijal/desktopbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mb-image {
+    max-height: 30rem;
+}
+
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+
+.pulse {
+    text-transform: uppercase;
+    background-color: #212529;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: 0.7rem 1.4rem;
+    --color: #ef6eae;
+    --hover: #ef8f6e;
+}
+
+
+button.pulse {
+    color: var(--color);
+    transition: 0.25s;
+  }
+  button.pusle:hover, button:focus {
+    border-color: var(--hover);
+    color: #fff;
+  }
+  
+  
+button.pusle {
+    background: rgb(66, 66, 66);
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+}
